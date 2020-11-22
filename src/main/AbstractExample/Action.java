@@ -9,15 +9,15 @@ public class Action {
         RequestOSName android = new androidGetOSName();
         RequestOSName ios = new iosGetOSName();
 
-        // For android and ios objects, I've call method, and send OS from enum Platforms, to getInfo() method
+        // For android and ios objects, I've called method, and send OS from enum OSNameList, to getInfo() method
         // if conditions correct, notice in console will be shown
 
-        System.out.println(android.getInfo(Platforms.ANDROID));
+        System.out.println(android.getInfo(OSNameList.ANDROID));
 
-        System.out.println(ios.getInfo(Platforms.IOS));
+        System.out.println(ios.getInfo(OSNameList.IOS));
 
-        System.out.println(android.getInfo(Platforms.BLACKBERRY_OS));
-        System.out.println(ios.getInfo(Platforms.SYMBIAN));
+        System.out.println(android.getInfo(OSNameList.BLACKBERRY_OS));
+        System.out.println(ios.getInfo(OSNameList.SYMBIAN));
 
     }
 }

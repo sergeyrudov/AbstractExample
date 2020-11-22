@@ -1,6 +1,6 @@
 package AbstractExample;
 
-public enum Platforms {
+public enum OSNameList {
 
     ANDROID ("android"),
     IOS ("ios"),
@@ -10,7 +10,7 @@ public enum Platforms {
 
     private String displayName;
 
-    Platforms(String displayName) {
+    OSNameList(String displayName) {
         this.displayName = displayName;
     }
     public String toString() {
