@@ -1,12 +1,13 @@
 package AbstractExample;
 
-public class iosGetPlatform extends Request {
+public class androidGetOSName extends RequestOSName {
 
     @Override
     public String getInfo(Platforms value) {
-        if (value.equals(Platforms.IOS)) {
+        if (value.equals(Platforms.ANDROID)) {
             return "Yes, my platform is: "+ value.toString().toUpperCase();
         }
-        return "My OS is NOT: " + value;
+        return "My OS is NOT: " + value ;
     }
 }
+

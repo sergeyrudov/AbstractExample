@@ -1,6 +1,6 @@
 package AbstractExample;
 
-public abstract class Request {
+public abstract class RequestOSName {
 
     public abstract String getInfo(Platforms value);
 }

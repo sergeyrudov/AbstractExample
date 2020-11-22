@@ -2,14 +2,14 @@ package AbstractExample;
 
 public class Action {
     public static void main(String[] args) {
-        // Create ios & android objects. Request is abstract class, and have 1 empty method
-        // Classes iosGetPlatform & androidGetPlatform contains realized methods, and inherited from Request
+        // Created ios & android objects. RequestOSName is abstract class, and have 1 empty method
+        // Classes iosGetOSName & androidGetOSName contains realized methods, and inherited from RequestOSName
 
 
-        Request android = new androidGetPlatform();
-        Request ios = new iosGetPlatform();
+        RequestOSName android = new androidGetOSName();
+        RequestOSName ios = new iosGetOSName();
 
-        // For android and ios objects, I've call method, and send platform from enum Platforms
+        // For android and ios objects, I've call method, and send OS from enum Platforms, to getInfo() method
         // if conditions correct, notice in console will be shown
 
         System.out.println(android.getInfo(Platforms.ANDROID));
